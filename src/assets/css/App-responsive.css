@@ -1,78 +1,229 @@
-@media (min-width: 768px) {
-    h1 {
-        font-size: 4.375rem;
+@media (min-width: 413px) and (max-width: 768px) {
+    .nav-button {
+        font-size: 1.30rem;
+    }
+    
+    #home h1 {
+        font-size: 4.1256rem;
     }
 
     h2 {
-        font-size: 2.563rem;
+        font-size: 1.950rem;
     }
 
-    h3 {
-        font-size: 2.313rem;
-    }
-
-    #intro-description {
-        font-size: 2.313rem;
-    }
-
-    #home-socials .icons {
-        margin: 1.375rem 0.469rem 1.376rem;
-    }
-
-    #projects .project-box .project-description,
-    #about-me #about-description,
-    #about-me .about-me-description,
-    #experience-description,
-    #contact-description,
-    #projects .project-box .project-button,
-    #about-me .about-me-buttons-box a,
-    #contact #email-button,
-    #technologies p {
-        margin: 0.938rem 0;
-        font-size: 2.063rem;
-    }
-
-    section#see-projects {
-        padding: 2.031rem 2.5vw 4.75rem;
-    }
-
-    #see-projects #see-projects__button,
-    #projects #technologies__button {
-        padding: 1.688rem 2.688rem;
-        font-size: 2.125rem;
+    h3, #home #slogan {
+        font-size: 1.650rem;
     }
 
     .icons {
-        height: 2.438rem;
-        width: 2.438rem;
+        height: 2.25rem;
+        width: 2.25rem;
     }
 
-    #technologies a,
-    #contact #contact-socials a {
-        font-size: 1.938rem;
+    #see-projects a {
+        font-size: 1.4256rem;
+    }
+
+    #technologies a {
+        font-size: 1.2rem;
+    }
+
+    #projects .project-description,
+    #projects .project-buttons-box a,
+    #about-me #about-me-buttons-box a,
+    #about-me .about-me-description,
+    #about-me h3,
+    #about-me p,
+    #contact p,
+    #contact #email-button,
+    #technologies .technology-box p {
+        font-size: 1.350rem;
     }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 768px) and (max-width: 950px) {
     #nav {
-        height: 4.063rem;
+        height: 3.90625rem;
         top: 0;
+        border-radius: 0 0 0.625rem 0.625rem;
     }
 
     .nav-button {
-        font-size: 2.188rem;
+        font-size: 1.5625rem;
     }
 
-    section#home {
-        padding: 7.626rem 2.5vw 0;
+    #home {
+        padding: 25vh 2.5vw 0;
+    }
+    
+    #home h1 {
+        font-size: 4.2975rem;
     }
 
-    #projects .preview-descriptions-box {
+    h2 {
+        font-size: 2.03125rem;
+    }
+
+    h3, #home #slogan {
+        font-size: 1.71875rem;
+    }
+
+    .icons {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    #see-projects a {
+        font-size: 1.485rem;
+    }
+
+    #technologies a {
+        font-size: 1.333rem;
+    }
+
+    #projects .project-description,
+    #projects .project-buttons-box a,
+    #about-me #about-me-buttons-box a,
+    #about-me .about-me-description,
+    #about-me h3,
+    #about-me p,
+    #contact p,
+    #contact #email-button,
+    #technologies .technology-box p {
+        font-size: 1.40625rem;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1280px) {
+    #nav {
+        height: 3.90625rem;
+        top: 0;
+        border-radius: 0 0 0.625rem 0.625rem;
+    }
+
+    .nav-button {
+        font-size: 1.5625rem;
+    }
+
+    #home {
+        padding: 35vh 2.5vw 0;
+    }
+
+    #see-projects {
+        padding: 3.158rem 2.5vw 28vh;
+    }
+    
+    #home h1 {
+        font-size: 4.2975rem;
+    }
+
+    h2 {
+        font-size: 2.03125rem;
+    }
+
+    h3, #home #slogan {
+        font-size: 1.71875rem;
+    }
+
+    .icons {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    #see-projects a {
+        font-size: 1.485rem;
+    }
+
+    #technologies a {
+        font-size: 1.333rem;
+    }
+
+    #projects .project-description,
+    #projects .project-buttons-box a,
+    #about-me #about-me-buttons-box a,
+    #about-me .about-me-description,
+    #about-me h3,
+    #about-me p,
+    #contact p,
+    #contact #email-button,
+    #technologies .technology-box p {
+        font-size: 1.40625rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    #nav {
+        height: 3.90625rem;
+        top: 0;
+        border-radius: 0 0 0.625rem 0.625rem;
+    }
+
+    .nav-button {
+        font-size: 1.5625rem;
+    }
+
+    #home {
+        padding: 23vh 2.5vw 0;
+    }
+
+    #see-projects {
+        padding: 3.158rem 2.5vw 20vh;
+    }
+    
+    #home h1 {
+        font-size: 6.876rem;
+    }
+
+    h2 {
+        font-size: 2.03125rem;
+    }
+
+    h3, #home #slogan {
+        font-size: 1.71875rem;
+    }
+
+    .icons {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    #see-projects a {
+        font-size: 1.485rem;
+    }
+
+    #technologies a {
+        font-size: 1.333rem;
+    }
+
+    #projects #projects-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 5vw;
+        align-items: center;
+    }
+
+    #projects .project-box {
+        background: transparent;
     }
 
     #projects .project-preview {
-        width: 45vw;
+        width: 42.5vw;
+    }
+
+    #projects .project-description,
+    #projects .project-buttons-box a,
+    #about-me #about-me-buttons-box a,
+    #about-me .about-me-description,
+    #about-me h3,
+    #about-me p,
+    #contact p,
+    #contact #email-button,
+    #technologies .technology-box p {
+        font-size: 1.40625rem;
+    }
+
+    #about-me #header {
+        grid-template-columns: calc(100% / 4) calc((100% / 4) * 3);
+        align-items: center;
     }
 }

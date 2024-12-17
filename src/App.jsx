@@ -1,4 +1,5 @@
 import './assets/css/App.css';
+import './assets/css/App-responsive.css';
 
 import Nav from './components/Nav';
 import Home from './components/Home';
