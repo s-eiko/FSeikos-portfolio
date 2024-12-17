@@ -1,0 +1,78 @@
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4.375rem;
+    }
+
+    h2 {
+        font-size: 2.563rem;
+    }
+
+    h3 {
+        font-size: 2.313rem;
+    }
+
+    #intro-description {
+        font-size: 2.313rem;
+    }
+
+    #home-socials .icons {
+        margin: 1.375rem 0.469rem 1.376rem;
+    }
+
+    #projects .project-box .project-description,
+    #about-me #about-description,
+    #about-me .about-me-description,
+    #experience-description,
+    #contact-description,
+    #projects .project-box .project-button,
+    #about-me .about-me-buttons-box a,
+    #contact #email-button,
+    #technologies p {
+        margin: 0.938rem 0;
+        font-size: 2.063rem;
+    }
+
+    section#see-projects {
+        padding: 2.031rem 2.5vw 4.75rem;
+    }
+
+    #see-projects #see-projects__button,
+    #projects #technologies__button {
+        padding: 1.688rem 2.688rem;
+        font-size: 2.125rem;
+    }
+
+    .icons {
+        height: 2.438rem;
+        width: 2.438rem;
+    }
+
+    #technologies a,
+    #contact #contact-socials a {
+        font-size: 1.938rem;
+    }
+}
+
+@media (min-width: 950px) {
+    #nav {
+        height: 4.063rem;
+        top: 0;
+    }
+
+    .nav-button {
+        font-size: 2.188rem;
+    }
+
+    section#home {
+        padding: 7.626rem 2.5vw 0;
+    }
+
+    #projects .preview-descriptions-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #projects .project-preview {
+        width: 45vw;
+    }
+}

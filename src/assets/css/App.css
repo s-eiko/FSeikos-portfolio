@@ -1,0 +1,412 @@
+/* Importing reset */
+
+@import url('./reset.css');
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Black Delights';
+    src: URL('../fonts/Black\ Delights.ttf') format('truetype');
+}
+
+
+/* Setting variables */
+
+:root, :root[data-theme='dark'] {
+    --primary-bg-color: #1B1521;
+    --secondary-bg-color: #251D2C;
+
+    --title-color: #D41E45;
+    --secondary-title-color: #ce95a1;
+    --text-color: #B5AC01;
+    --scroll-bar-color: #ecbb095a;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 5vw;
+} 
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-bar-color);
+    border-radius: 20px;
+}
+
+
+/* Global elements */
+
+h2 {
+    color: var(--title-color);
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.375rem;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.icons {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.social-element {
+    display: flex;
+    gap: 0 0.344rem;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    width: 70vw;
+    color: var(--secondary-bg-color);
+    background: var(--secondary-bg-color);
+    margin-left: 15vw;
+}
+
+
+/* Nav */
+
+#nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    background-color: var(--text-color);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    height: 3.125rem;
+    width: 100vw;
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.nav-button {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--primary-bg-color);
+    transition: all .5s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    font-weight: 400;
+}
+
+
+/* Home */
+
+#home {
+    background:
+        linear-gradient(to bottom right, var(--primary-bg-color) 35%, var(--secondary-bg-color) 50%) bottom right,
+        linear-gradient(to bottom left, var(--primary-bg-color) 35%, var(--secondary-bg-color) 50%) bottom left,
+        linear-gradient(to top left, var(--primary-bg-color) 35%, var(--secondary-bg-color) 50%) top left,
+        linear-gradient(to top right, var(--primary-bg-color) 35%, var(--secondary-bg-color) 50%) top right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 18vh 2.5vw 0;
+    gap: 2.064rem;
+}
+
+#home #introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 1.720rem;
+}
+
+#home h1 {
+    font-size: 3.438rem;
+    font-family: 'Black Delights', sans-serif;
+    color: var(--title-color);
+}
+
+    /* Animating name span */
+
+#home h1 #name {
+    opacity: 100%;
+    font-family: 'Black Delights', sans-serif;
+    background-image: linear-gradient(to right, var(--title-color)35%, var(--secondary-title-color) 50%, var(--title-color) 65%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+
+    animation: animatedName 3s infinite alternate;
+}
+
+@keyframes animatedName {
+    from {
+        background-position: 100%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+#home #slogan {
+    font-size: 1.375rem;
+    color: var(--text-color);
+    font-weight: 200;
+    margin: 0;
+}
+
+#home #social-box {
+    display: flex;
+    gap: 0 0.688rem;
+}
+
+
+/* See Projects */
+
+#see-projects {
+    background: linear-gradient(to bottom, var(--secondary-bg-color), var(--primary-bg-color));
+    padding: 3.158rem 2.5vw 22vh;
+}
+
+#see-projects a {
+    text-decoration: none;
+    font-size: 1.188rem;
+    color: var(--title-color);
+    background-color: var(--secondary-bg-color);
+    padding: 0.75rem 1.75rem;
+    border-radius: 3.125rem;
+    box-shadow: 0 0 0.188rem 0.125rem var(--title-color);
+    transition: all .5s ease;
+}
+
+#see-projects a:hover {
+    color: var(--secondary-bg-color);
+    background-color: var(--title-color);
+}
+
+
+/* Technologies */
+
+#technologies {
+    text-align: center;
+    padding-bottom: 3.5rem;
+}
+
+#technologies h2 {
+    margin: 1.75rem 0;
+}
+
+#technologies #technologies-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#technologies .technology-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.688rem;
+}
+
+#technologies .technology-box .icon-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 0.688rem;
+}
+
+#technologies p {
+    color: var(--text-color);
+}
+
+#technologies a {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 60%;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+#technologies a:hover {
+    opacity: 100%;
+}
+
+
+/* Projects */
+
+#projects {
+    text-align: center;
+    padding: 3.5rem 0;
+}
+
+#projects .project-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.75rem;
+    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, var(--secondary-bg-color) 50%, var(--primary-bg-color));
+    gap: 0.688rem 0;
+    padding: 0 2.5vw;
+}
+
+#projects .project-preview {
+    width: 95vw;
+    border-radius: 10px;
+    border: 0.188rem solid var(--text-color);
+}
+
+#projects .project-description {
+    color: var(--text-color);
+    font-size: 1.125rem;
+    text-align: justify;
+    line-height: 2.188rem;
+}
+
+#projects .project-buttons-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5vw;
+}
+
+#projects .project-buttons-box a {
+    background-color: var(--secondary-bg-color);
+    border: 0.125rem solid var(--title-color);
+    border-radius: 3.125rem;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.438rem 1.5rem;
+    color: var(--title-color);
+    transition: all .5s ease;
+}
+
+#projects .project-buttons-box a:hover {
+    background-color: var(--title-color);
+    border: 0.125rem solid var(--title-color);
+    color: var(--secondary-bg-color);
+}
+
+#projects #see-projects {
+    background: transparent;
+    padding: 3.158rem 0 0.75rem;
+}
+
+#projects #see-projects a {
+    box-shadow: 0 0 0.188rem 0.125rem var(--text-color);
+}
+
+
+/* About me */
+
+#about-me {
+    padding: 3.5rem 0;
+}
+
+#about-me #header {
+    display: grid;
+    grid-template-columns: calc(100% / 3) calc((100% / 3) * 2);
+    padding: 0 2.5vw;
+}
+
+#about-me #header img {
+    width: 80%;
+    border-radius: 100%;
+}
+
+#about-me .about-me-description {
+    padding: 0 2.5vw;
+}
+
+#about-me #about-me-buttons-box {
+    margin-top: 0.5rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5vw;
+    padding: 0 2.5vw;
+}
+
+#about-me #about-me-buttons-box a {
+    background-color: var(--secondary-bg-color);
+    border: 0.125rem solid var(--title-color);
+    border-radius: 3.125rem;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.438rem 1.5rem;
+    color: var(--title-color);
+    transition: all .5s ease;
+    text-align: center;
+}
+
+#about-me .about-me-buttons-box a:hover {
+    background-color: var(--title-color);
+    border: 0.125rem solid var(--title-color);
+    color: var(--secondary-bg-color);
+}
+
+#about-me .about-me-description,
+#about-me h3,
+#about-me p {
+    font-size: 1.125rem;
+    line-height: 2.188rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+#about-me #academic,
+#about-me #experience {
+    padding: 1.75rem 2.5vw 0;
+    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, var(--secondary-bg-color) 50%, var(--primary-bg-color));
+}
+
+#about-me #academic-description,
+#about-me #experience-description {
+    opacity: 60%;
+}
+
+
+/* Contact */
+
+#contact {
+    padding: 3.5rem 2.5vw 6.625rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.688rem 0;
+}
+
+#contact p {
+    font-size: 1.125rem;
+    line-height: 2.188rem;
+    color: var(--text-color);
+}
+
+#contact #contact-box {
+    justify-content: center;
+    display: flex;
+    gap: 0 1.376rem;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact #email-button {
+    background-color: var(--secondary-bg-color);
+    border: 0.125rem solid var(--title-color);
+    border-radius: 3.125rem;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.438rem 1.5rem;
+    color: var(--title-color);
+    transition: all .5s ease;
+}
+
+#contact #email-button:hover {
+    background-color: var(--title-color);
+    border: 0.125rem solid var(--title-color);
+    color: var(--secondary-bg-color);
+}
