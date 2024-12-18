@@ -3,7 +3,7 @@
 ## Sobre
 Meu portifólio com design responsivo. Saiba mais sobre meus projetos e experiências acadêmicas-profissionais.
 
-Acesse em: https://mseikos-portfolio.pages.dev/
+Acesse em: https://seikos-portfolio.netlify.app/
 
 ## Ferramentas utilizadas: 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
