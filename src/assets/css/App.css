@@ -338,10 +338,9 @@ hr {
     padding: 0.438rem 1.5rem;
     color: var(--title-color);
     transition: all .5s ease;
-    text-align: center;
 }
 
-#about-me .about-me-buttons-box a:hover {
+#about-me #about-me-buttons-box a:hover {
     background-color: var(--title-color);
     border: 0.125rem solid var(--title-color);
     color: var(--secondary-bg-color);

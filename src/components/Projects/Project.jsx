@@ -5,8 +5,8 @@ export default function Project({title, imgSrc, alt, description, siteRef, codeR
             <img src={imgSrc} alt={alt} className="project-preview"/>
             <p className="project-description">{description}</p>
             <div className="project-buttons-box">
-                <a href={siteRef}>Acessar site</a>
-                <a href={codeRef}>Código</a>
+                <a target="_blank" href={siteRef}>Acessar site</a>
+                <a target="_blank" href={codeRef}>Código</a>
             </div>
         </div>
     );

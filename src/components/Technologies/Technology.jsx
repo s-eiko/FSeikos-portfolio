@@ -6,7 +6,7 @@ export default function Technology({linkRef, imgScr, alt, children, ...props}) {
                 <p>{children}</p>
             </div>
             <div className="know-more">
-                <a href={linkRef}>Saiba mais</a>
+                <a target="_blank" href={linkRef}>Saiba mais</a>
             </div>
         </div>
     );

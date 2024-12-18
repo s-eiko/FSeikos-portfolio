@@ -14,8 +14,8 @@ export default function AboutMe() {
             </div>
             <p className='about-me-description'>Estudante de Análise e Desenvolvimento de Sistemas dedicada a aprender novas tecnologias! Atualmente meu foco é no front-end, mas pretendo desenvolver habilidades full-stack e me especializar no back-end futuramente.</p>
             <div id="about-me-buttons-box">
-                <a href="https://www.linkedin.com/in/mariana-seiko-fukuoka-456323314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Conecte-se</a>
-                <a href="https://docs.google.com/document/d/1ivE8mO_nuzd8aWrSJgDH30GYVZZ-I9Tj7TyTpLD5APs/edit?usp=sharing">Currículo</a>
+                <a target="_blank" href="https://www.linkedin.com/in/mariana-seiko-fukuoka-456323314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Conecte-se</a>
+                <a target="_blank" href="https://docs.google.com/document/d/1ivE8mO_nuzd8aWrSJgDH30GYVZZ-I9Tj7TyTpLD5APs/edit?usp=sharing">Currículo</a>
             </div>
             <AboutMeSection
                 sectionName="academic"
